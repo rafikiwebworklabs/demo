@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kena Computers Services - Print Shop in Athi River</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9) 0%, rgba(59, 130, 246, 0.8) 100%);
+        }
+        .hours-container:hover .hours-details {
+            display: block;
+        }
+        .map-container {
+            height: 400px;
+        }
+        @media (max-width: 768px) {
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-print text-2xl"></i>
+                <span class="text-xl font-bold">Kena Computers</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#services" class="hover:text-blue-200 transition">Services</a>
+                <a href="#about" class="hover:text-blue-200 transition">About</a>
+                <a href="#hours" class="hover:text-blue-200 transition">Hours</a>
+                <a href="#contact" class="hover:text-blue-200 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-blue-700" id="mobileMenu">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#services" class="py-2 hover:text-blue-200 transition">Services</a>
+                <a href="#about" class="py-2 hover:text-blue-200 transition">About</a>
+                <a href="#hours" class="py-2 hover:text-blue-200 transition">Hours</a>
+                <a href="#contact" class="py-2 hover:text-blue-200 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Kena Computers Services</h1>
+                <p class="text-xl mb-6">Your trusted print shop in Athi River, Kenya</p>
+                <div class="flex items-center mb-4">
+                    <div class="flex text-yellow-400 mr-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span>4.8 (8 reviews)</span>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">Contact Us</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Kena%20Computers%20Services&query_place_id=ChIJWRV9yHl1LxgRFBAbUSLocEc" target="_blank" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-800 transition">View on Map</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-full max-w-md h-64 md:h-80 bg-white rounded-xl shadow-2xl overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipO0TwAtwTzgzAg17rfZe-fDB-XTUzKtogyU78Vk=w408-h268-k-no" alt="Kena Computers Services" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                        <p class="text-white font-medium">Makadara Road, Athi River</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-print text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Printing Services</h3>
+                    <p class="text-gray-600">High-quality printing for all your documents, photos, and marketing materials with quick turnaround times.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-laptop-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Computer Services</h3>
+                    <p class="text-gray-600">Comprehensive computer repair, maintenance, and troubleshooting services to keep your devices running smoothly.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-palette text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Art Prints</h3>
+                    <p class="text-gray-600">Specialized art printing services to bring your creative visions to life with vibrant colors and premium materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold mb-6 text-blue-800">About Kena Computers</h2>
+                    <p class="text-gray-600 mb-4">Located on Makadara Road in Athi River, Kenya, Kena Computers Services has been serving the community with reliable printing and computer services since our establishment.</p>
+                    <p class="text-gray-600 mb-4">With a 4.8-star rating from our customers, we take pride in delivering exceptional service quality and customer satisfaction.</p>
+                    <p class="text-gray-600">Our team of skilled professionals is dedicated to meeting all your printing and computing needs with efficiency and care.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-blue-800">Why Choose Us?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Extended working hours (7:30 AM to 8 PM daily)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>High-quality printing with modern equipment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Knowledgeable and friendly staff</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Convenient location in Athi River</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Competitive pricing for all services</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section id="hours" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Business Hours</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="hours-container bg-gray-50 rounded-xl p-6 shadow-md relative">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold text-blue-800">Current Opening Hours</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </div>
+                    <div class="hours-details hidden mt-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex justify-between py-2 border-b">
+                                <span class="font-medium">Monday</span>
+                                <span>7:30 AM - 8:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b">
+                                <span class="font-medium">Tuesday</span>
+                                <span>7:30 AM - 8:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b">
+                                <span class="font-medium">Wednesday</span>
+                                <span>7:30 AM - 8:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b">
+                                <span class="font-medium">Thursday</span>
+                                <span>7:30 AM - 8:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b">
+                                <span class="font-medium">Friday</span>
+                                <span>7:30 AM - 8:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b">
+                                <span class="font-medium">Saturday</span>
+                                <span>7:30 AM - 8:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b">
+                                <span class="font-medium">Sunday</span>
+                                <span>7:30 AM - 8:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600 mb-4">We're open every day of the week to serve you better!</p>
+                    <p class="text-sm text-gray-500">Hours last updated: July 7, 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map and Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Find Us</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <div class="map-container bg-white rounded-xl shadow-md overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9876543210987!2d36.97499!3d-1.45714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f7579c87d1559%3A0x4770e822511b1014!2sKena%20Computers%20Services!5e0!3m2!1sen!2ske!4v1625675554321!5m2!1sen!2ske" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            class="min-h-[300px]"
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white rounded-xl shadow-md p-6 h-full">
+                        <h3 class="text-2xl font-bold mb-6 text-blue-800">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p class="text-gray-600">Makadara Road, Athi River, Kenya</p>
+                                    <p class="text-gray-600">Postal Code: 204</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mr-4 mt-1">
+                                    <i class="fas fa-phone-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p class="text-gray-600">+254 700 783502</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mr-4 mt-1">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p class="text-gray-600">info@kenacomputers.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mr-4 mt-1">
+                                    <i class="fas fa-clock text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Business Hours</h4>
+                                    <p class="text-gray-600">Daily: 7:30 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4 text-blue-800">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="text-blue-400 hover:text-blue-600 text-2xl">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-pink-600 hover:text-pink-800 text-2xl">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-print text-2xl"></i>
+                        <span class="text-xl font-bold">Kena Computers Services</span>
+                    </div>
+                    <p class="mt-2 text-blue-200">Your trusted print shop in Athi River</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <p class="mb-2">© 2023 Kena Computers Services. All rights reserved.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-200">Privacy Policy</a>
+                        <a href="#" class="hover:text-blue-200">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hours dropdown functionality
+        const hoursContainer = document.querySelector('.hours-container');
+        const hoursDetails = document.querySelector('.hours-details');
+        const chevron = hoursContainer.querySelector('i');
+        
+        hoursContainer.addEventListener('click', () => {
+            hoursDetails.classList.toggle('hidden');
+            chevron.classList.toggle('fa-chevron-down');
+            chevron.classList.toggle('fa-chevron-up');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
